@@ -8,5 +8,11 @@
         'ui.router'
     ]);
     
+    app.config(['$stateProvider', '$urlRouterProvider',
+                function ($stateProvider, $urlRouterProvider) {
+                    $urlRouterProvider.otherwise('/events');
+                }
+           ]);
+    
     app.constant('APIURL', 'http://localhost:3000/api/');
 }());
