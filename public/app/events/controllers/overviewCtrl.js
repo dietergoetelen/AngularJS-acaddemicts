@@ -8,6 +8,8 @@
             this.message = "Hello, world!";
             this.dataService = DataService;
             
+            this.newQuestion = false;
+            
             this.getEvents();
         }
         

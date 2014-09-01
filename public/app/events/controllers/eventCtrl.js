@@ -8,6 +8,9 @@
             this.eventId = $stateParams.id;
             this.dataService = DataService;
             
+            this.newQuestion = false;
+            this.question = {};
+            
             this.getEventById(this.eventId);
         }
         
@@ -17,6 +20,21 @@
             vm.dataService.getEventById(id, function success(result) {
                 vm.event = result;    
             });
+        };
+        
+        EventCtrl.prototype.displayForm = function (value) {
+            this.question = {};
+            this.newQuestion = value;
+        };
+        
+        EventCtrl.prototype.saveQuestion = function (question) {
+            if (question.name && question.question) {
+                this.event.questions.push(question);
+
+                // Todo: Save into database
+
+                this.displayForm(false);    
+            }
         };
         
         EventCtrl.$inject = ['DataService', '$stateParams'];

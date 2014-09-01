@@ -4,18 +4,35 @@
         <h2 class="pull-left">Questions</h2>
         
         <div class="form-group pull-right ">
+            <a ng-click="vm.displayForm(true)" class="btn btn-success">New</a>
             <a ui-sref="events" class="btn btn-primary">Close</a>
         </div>
         
         <div class="clearfix"></div>
         
         <hr/>
-        
-        <div ng-repeat="question in vm.event.questions" class="panel panel-default">
-            <div class="panel-body">
-                {{ question.question }} <em>-- by {{ question.name }}</em>
+
+        <div ng-show="vm.newQuestion">
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="vm.question.name" placeholder="name"/>
+            </div>
+            
+            <div class="form-group">
+                <textarea class="form-control" ng-model="vm.question.question" placeholder="Question?" rows="5" ></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-success" ng-click="vm.saveQuestion(vm.question)">Save</button>
             </div>
         </div>
-
+        
+        <div ng-hide="vm.newQuestion">
+            <div ng-repeat="question in vm.event.questions" class="panel panel-default">
+                <div class="panel-body">
+                    {{ question.question }} <em>-- by {{ question.name }}</em>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
