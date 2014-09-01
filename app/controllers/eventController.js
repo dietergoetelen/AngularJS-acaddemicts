@@ -59,7 +59,7 @@
         }
         
         EventController.prototype.getEvents = function (req, res) {
-            var holder = this.events;
+            var holder = JSON.parse(JSON.stringify(this.events));
             
             holder.forEach(function (event) {
                 event.numOfQuestions = event.questions.length;

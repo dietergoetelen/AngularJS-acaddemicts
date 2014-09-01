@@ -4,6 +4,7 @@
     
     var app = angular.module('app', [
         'app.events',
+        'app.common',
         'ui.router'
     ]);
     
