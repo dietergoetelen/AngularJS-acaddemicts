@@ -34,13 +34,21 @@
         <hr/>
         
         <div class="row" ng-controller="OverviewCtrl as vm">
-            
-            {{ vm.message }}
-            
-            <button ng-click="vm.changeMessage()">Hello!</button>
-            
+            <div ng-repeat="event in vm.events" class="col-md-3">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        {{ event.name }}
+                    </div>
+                    <div class="panel-body">
+                        {{ event.description }}
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary">View details</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
     </div>
       
     <!-- libs -->
