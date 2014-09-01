@@ -28,12 +28,15 @@
         };
         
         EventCtrl.prototype.saveQuestion = function (question) {
+            var vm = this;
+            
             if (question.name && question.question) {
-                this.event.questions.push(question);
 
-                // Todo: Save into database
-
-                this.displayForm(false);    
+                vm.dataService.addQuestion(this.eventId, question, function success(result) {
+                    vm.event.questions.push(question);
+                });
+                
+                vm.displayForm(false);    
             }
         };
         
