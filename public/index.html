@@ -33,84 +33,12 @@
         
         <hr/>
         
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" ng-controller="OverviewCtrl as vm">
             
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
+            {{ vm.message }}
             
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <button ng-click="vm.changeMessage()">Hello!</button>
             
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Test</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            Some description... 
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
@@ -124,6 +52,6 @@
     
     <!-- events -->
     <script src="app/events/events.js"></script>
-      
+    <script src="app/controllers/overviewCtrl.js"></script>
   </body>
 </html>

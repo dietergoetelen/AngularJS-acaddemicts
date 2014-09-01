@@ -8,5 +8,4 @@
     ]);
     
     app.constant('APIURL', 'http://localhost:3000/api/');
-    
 }());
