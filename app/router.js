@@ -26,5 +26,9 @@
         app.post('/api/events/:eventId/questions', function (req, res) { eventController.addQuestion(req, res); });
         
         app.delete('/api1/events/:eventId', function (req, res) { eventController.deleteEvent(req, res); });
+        
+        app.get('*', function (req, res) {
+            res.sendfile('public/index.html');
+        });
     };
 }());

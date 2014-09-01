@@ -9,23 +9,49 @@
                 [
                     {
                         "id": 1,
-                        "name": "RealDolmen acADDemICTs training",
+                        "name": "AngularJS Hack Lunch",
+                        "description": "Hang out and hack on AngularJS with other developers. There is no agenda and no presentation, just a bunch of developers hacking together on their Angular apps.",
                         "questions":
                             [
                                 {
                                     "name": "John Doe",
-                                    "question": "Why don't you use the $scope variable?"
+                                    "question": "What is this meeting about?"
                                 }
                             ]
                     },
                     {
                         "id": 2,
-                        "name": "RealDolmen acADDemICTs training",
+                        "name": "Idiot Proofing Your Code",
+                        "description": "Schedule: 6:00pm: Doors open, drinks + snacks by PubNub 6:30pm: Introduction and Thanks 6:40pm: Jarrod Overson presents Idiot proofing your code",
                         "questions":
                             [
                                 {
                                     "name": "John Doe",
-                                    "question": "Why don't you use the $scope variable?"
+                                    "question": "What is this meeting about?"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "Protonight - Pair Programming Hack Session",
+                        "description": "Get paired up with a random person to hack on whatever you want for 2 hours! See http://protonight.com for more details.",
+                        "questions":
+                            [
+                                {
+                                    "name": "John Doe",
+                                    "question": "What is this meeting about?"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Rendr with Airbnb and Change.org",
+                        "description": "Schedule: (Please note talks start at 6:50p) 6:00pm: Doors open, drinks + snacks by PubNub 6:45pm: Introduction and Thanks 6:50pm: Spike Brehm on How To Rendr ",
+                        "questions":
+                            [
+                                {
+                                    "name": "John Doe",
+                                    "question": "What is this meeting about?"
                                 }
                             ]
                     }
