@@ -1,3 +1,21 @@
-<div>
-    Details
+<div id="event-wrapper">
+    <div id="event-details" ng-controller="EventCtrl as vm">
+        
+        <h2 class="pull-left">Questions</h2>
+        
+        <div class="form-group pull-right ">
+            <a ui-sref="events" class="btn btn-primary">Close</a>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <hr/>
+        
+        <div ng-repeat="question in vm.event.questions" class="panel panel-default">
+            <div class="panel-body">
+                {{ question.question }} <em>-- by {{ question.name }}</em>
+            </div>
+        </div>
+
+    </div>
 </div>

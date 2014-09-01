@@ -1,0 +1,21 @@
+#event-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .2);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#event-details {
+    position: relative;
+    width: 400px;
+    left: 0;
+    right: 0;
+    width: 40%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 40px;
+}

@@ -20,6 +20,17 @@
                 });
         };
         
+        DataService.prototype.getEventById = function (id, successCb, errorCb) {
+            this._$http
+                .get(this._APIURL + 'events/' + id)
+                .success(function (data) {
+                    successCb(data);
+                })
+                .error(function (data) {
+                    errorCb(data);
+                });
+        };
+        
         DataService.$inject = ['APIURL', '$http'];
         
         return DataService;
