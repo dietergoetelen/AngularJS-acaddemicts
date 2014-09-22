@@ -152,7 +152,7 @@
         
         EventController.prototype.addQuestion = function (req, res) {
             var question = req.body,
-                eventId = req.params.eventId,
+                eventId = +req.params.eventId,
                 added = false;
             
             this.events.forEach(function (event) {
